@@ -24,6 +24,7 @@ describe ("Test suite - conjunto de pruebas",() => {
         cy.get('#year').type("2025")
         cy.get('#orderModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary').click()
         cy.get('.confirm').click()
+
         
         
     })
@@ -35,6 +36,26 @@ describe ("Test suite - conjunto de pruebas",() => {
         cy.get('#loginpassword').type("123456")
         cy.get('#logInModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary').click()
         cy.get('#logInModal > .modal-dialog > .modal-content > .modal-footer > .btn-secondary').click()
+        cy.get(':nth-child(1) > .card > .card-block > .card-title > .hrefch').click()
+        cy.get('.col-sm-12 > .btn').click()
+        cy.get('#cartur').click()
+        
+        cy.get('.col-lg-1 > .btn').click() //CLICK EN PLACE ORDER
+        cy.get('#name').type("Douglas")
+        cy.get('#country').type("Guatemala")
+        cy.get('#city').type("Guatemala")
+        cy.get('#card').type("123456789")
+        cy.get('#month').type("12")
+        cy.get('#year').type("2025") //culminacion del registro de informacion
+
+        cy.get('#orderModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary').click() //CLICK EN EL BOTON DE purchase
+        cy.get('.sweet-alert > h2').should("have.text","Thank you for your purchase!") //VALIDACION DE QUE SE MUESTRA EL MENSAJE DE GRACIAS POR SU COMPRA
+        cy.get('.confirm').click() //CLICK EN EL BOTON DE OK
+        
+
+
+
+
 
 
 
