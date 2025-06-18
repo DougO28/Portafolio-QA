@@ -7,11 +7,17 @@ Este repositorio contiene ejemplos y estructuras de pruebas automatizadas utiliz
 ## 📁 Estructura del repositorio
 
 ├── cypress/ # Pruebas con Cypress
+
 │ ├── e2e/ # Casos de prueba end-to-end
+
 │ └── support/ # Archivos de soporte y comandos personalizados
+
 ├── python_tests/ # Pruebas en Python (requests, validaciones)
+
 ├── requirements.txt # Librerías necesarias para Python
+
 ├── cypress.config.js # Configuración de Cypress
+
 └── README.md # Este archivo
 
 #Puede que varíe 
